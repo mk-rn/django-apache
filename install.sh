@@ -111,9 +111,7 @@ echo "WSGIProcessGroup "$project_name"_wsgi" | sudo tee -a $apache/000-default.c
 echo "WSGIScriptAlias / $pwd/$project_name/$project_name/wsgi.py" | sudo tee -a $apache/000-default.conf
 echo "</VirtualHost>" | sudo tee -a $apache/000-default.conf
 
-sed -i "s/#	127.0.0.1       localhost/	127.0.0.1       $project_name/g" /mnt/c/Windows/System32/drivers/etc/hosts
 
 sudo chown www-data:www-data $pwd/$project_name
 sudo chown www-data:www-data $pwd/$project_name/db.sqlite3
 sudo service apache2 restart
-
