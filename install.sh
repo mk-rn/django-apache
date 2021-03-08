@@ -49,8 +49,7 @@ then
     "$gc"2)"$nc" "$rc"Не"$nc" делать backup и заменить
 
 Сделайте выбор: $gc")" conf_file_if
-echo -e "$nc
-"
+
 		if [ "$conf_file_if" == "1" ]
 		then
 			sudo cp $apache/000-default.conf $apache/000-default.conf.$conf_file_cp
@@ -64,6 +63,8 @@ echo -e "$nc
 	done
 fi
 
+echo -e "$nc
+"
 
 sudo apt update
 sudo apt upgrade -y
