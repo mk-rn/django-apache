@@ -49,7 +49,7 @@ then
     "$gc"2)"$nc" "$rc"Не"$nc" делать backup и заменить
 
 Сделайте выбор: $gc")" conf_file_if
-echo "$nc
+echo -e "$nc
 "
 		if [ "$conf_file_if" == "1" ]
 		then
