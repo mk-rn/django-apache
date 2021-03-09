@@ -180,6 +180,5 @@ then
 fi
 
 echo -e "$nc"
-sudo chown www-data:www-data $pwd/$project_name
-sudo chown www-data:www-data $pwd/$project_name/db.sqlite3
+chmod -R 777 $pwd
 sudo service apache2 restart
