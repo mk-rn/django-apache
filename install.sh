@@ -436,5 +436,3 @@ main() {
 	edit_chmod
 	sudo service apache2 restart	
 }
-
-main
