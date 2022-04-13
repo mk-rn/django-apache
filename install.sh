@@ -15,7 +15,7 @@ arr_installed=()
 arr_unchecked=()
 arr_checked=()
 main_pckgs='apache2 python3 virtualenv'
-pckgs='neofetch net-tools wget htop tree vim mc git'
+pckgs='neofetch libexpat1 apache2-utils ssl-cert libapache2-mod-wsgi net-tools wget htop tree vim mc git'
 
 
 gc() {
